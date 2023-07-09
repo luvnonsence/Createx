@@ -4,7 +4,7 @@
 </g>
 <defs>
 <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-<use xlink:href="#image0_2492_20138" transform="matrix(0.00126263 0 0 0.00164141 0 -0.00227273)"/>
+<use xlink:href="#image0_2492_20138" transform="translate(0 -0.00227273) scale(0.00126263 0.00164141)"/>
 </pattern>
 <clipPath id="clip0_2492_20138">
 <rect width="120" height="64" fill="white"/>
