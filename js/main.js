@@ -21,6 +21,30 @@ $(function () {
     slidesToShow: 4,
     draggable: false,
     waitForAnimate: false,
+    responsive:
+    [
+      {
+        breakpoint: 1100,
+        settings: {
+          slidesToShow: 3,
+          draggable: false,
+        },
+      },
+      {
+        breakpoint: 750,
+        settings: {
+          slidesToShow: 2,
+          draggable: false,
+        },
+      },
+      {
+        breakpoint: 550,
+        settings: {
+          slidesToShow: 1,
+          draggable: true,
+        },
+      },
+    ]
   })
   $('.team__slider-prev').on('click', function (e) {
     e.preventDefault()
@@ -67,6 +91,29 @@ $(function () {
       $(this).children('.program__acc-text').slideDown()
     }
   })
+
+  // Бургер
+  setInterval(() => {
+    if ($(window).scrollTop() > 0 && $('.header__top').hasClass('header__top--open') === false) {
+      $('.burger').addClass('burger--follow')
+    } else {
+      $('.burger').removeClass('burger--follow')
+    }
+  }, 0)
+  $('.burger, .overlay').on('click', function (e) {
+    e.preventDefault()
+    $('.header__top').toggleClass('header__top--open')
+    $('.overlay').toggleClass('overlay--show')
+  })
+
+
+
+
+
+
+
+
+
 
 
 
